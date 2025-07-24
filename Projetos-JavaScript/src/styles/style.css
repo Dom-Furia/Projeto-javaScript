@@ -1,6 +1,6 @@
 
 :root{
-    --main-color:#d3ad7f;
+    --main-color:#a67b5b;
     --black:#13131a;
     --bg: #010103;
     --border: 0.2rem solid rgba(255,255,255,0.3);
@@ -80,8 +80,19 @@ section{
     border-radius: 0.5rem;
     border: none;
 }
+
+.btn:hover{
+    background-color: #994e0d ;
+    padding: 1.2rem 3.2rem ;
+
+}
+.btn:active {
+  transform: translateY(2px); /* Desloca o botão para baixo */
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3); /* Cria uma sombra sutil */
+}
+
 .home-container{
-    background: url("/src/assets/img/home-img.jpg");
+    background: url("/Projeto-javaScript/Projetos-JavaScript/src/assets/img/home-img.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -125,10 +136,11 @@ section{
     align-items: center;
     background-color: var(--black);
     gap: 1rem;
+    margin-top: 0;
 
 }
 .content-about{
-    padding: 2rem;
+    padding: 1rem;
 }
 .content-about h3{
     font-size: 3rem;
@@ -141,6 +153,46 @@ section{
     padding: 1rem 0;
     line-height: 1.5;
 }
-.content-sobre button{
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
     
+}
+
+.card{
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    border-radius: 0.5rem;
+}
+.card img{
+    height: 10rem;
+    
+}
+
+.card h3{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.card p{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.card span{
+    color: #ce1010;
+    font-size: 1.5rem;
+    text-decoration-line: line-through;
+    padding: 1rem 0;
+}
+.card:hover{
+    background-color: #fff;
+    
+}
+.card:hover>*{
+    color: var(--bg);
 }
